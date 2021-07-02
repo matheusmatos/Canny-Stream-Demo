@@ -21,11 +21,13 @@
         "UIBackgroundModes": ["audio"]
       },
       "bundleIdentifier": "com.bacon.cannystream",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "googleServicesFile": "./firebase/GoogleService-Info.plist"
     },
     "plugins": [
       "react-native-health",
       "@react-native-voice/voice",
+      "with-rn-firebase",
       [
         "@config-plugins/react-native-dynamic-app-icon", 
         [
@@ -38,6 +40,7 @@
     ],
     "android": {
       "package": "com.bacon.cannystream",
+      "googleServicesFile": "./firebase/google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
